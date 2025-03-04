@@ -4,31 +4,11 @@
   padding: 20px;
 }
 
-.stripe-payment-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.payment-button {
-  background-color: #ec7211 !important;
-  color: white !important;
-  border: none !important;
-  padding: 12px 20px !important;
-  border-radius: 4px !important;
-  cursor: pointer !important;
-  font-weight: bold !important;
-  margin-top: 20px !important;
-  width: 100% !important;
-}
-
-.payment-button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
-.error-message {
-  color: #df1b41;
-  margin-top: 10px;
-  font-size: 14px;
+/* Custom styling for the Stripe Buy Button */
+stripe-buy-button {
+  --button-height: auto;
+  --button-width: 100%;
+  --button-border-radius: 4px;
+  --button-font-weight: bold;
+  --button-theme: #ec7211;
 }
