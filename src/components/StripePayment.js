@@ -3,6 +3,8 @@ import { loadStripe } from '@stripe/stripe-js';
 import { Elements, PaymentElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { STRIPE_PUBLISHABLE_KEY } from '../stripeConfig';
 import './StripePayment.css';
+import { createPaymentIntent } from '../mockApi';
+
 
 // Load Stripe outside of component to avoid recreating Stripe object on renders
 const stripePromise = loadStripe(STRIPE_PUBLISHABLE_KEY);
@@ -57,24 +59,22 @@ const CheckoutForm = () => {
 const StripePayment = () => {
   const [clientSecret, setClientSecret] = useState("");
 
-  useEffect(() => {
-    // Create PaymentIntent as soon as the page loads
-    // In a real application, you would call your backend to create a PaymentIntent
-    // This is just a placeholder - you'll need to implement the actual API call
-    fetch("/create-payment-intent", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ amount: 1999 }), // $19.99
-    })
-      .then((res) => res.json())
-      .then((data) => setClientSecret(data.clientSecret))
-      .catch(err => {
-        console.error("Error creating payment intent:", err);
-        // For demo purposes, set a dummy client secret
-        // IMPORTANT: In production, NEVER do this! Always get a real client secret from your server
-        setClientSecret("demo_client_secret_for_testing_only");
-      });
-  }, []);
+useEffect(() => {
+  // Create PaymentIntent using our mock API
+  const fetchPaymentIntent = async () => {
+    try {
+      const { clientSecret } = await createPaymentIntent(1999);
+      setClientSecret(clientSecret);
+    } catch (err) {
+      console.error("Error creating payment intent:", err);
+      // For demo purposes only
+      setClientSecret("demo_client_secret_for_testing_only");
+    }
+  };
+  
+  fetchPaymentIntent();
+}, []);
+
 
   const appearance = {
     theme: 'stripe',
