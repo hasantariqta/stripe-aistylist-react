@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
 import IntroScreen from './IntroScreen';
-import './components/AppLayout.css';
+import './AppLayout.css';
 
 function AppLayout() {
   const [currentStep, setCurrentStep] = useState('intro');
