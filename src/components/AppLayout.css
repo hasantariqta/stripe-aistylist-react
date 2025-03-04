@@ -1,0 +1,19 @@
+.hui-app-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .hui-app-layout-content {
+    flex: 1;
+  }
+  
+  .hui-stepper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hui-stepper-content {
+    height: 100%;
+  }
+  

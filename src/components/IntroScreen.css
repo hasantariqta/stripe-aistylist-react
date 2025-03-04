@@ -1,0 +1,70 @@
+.hui-step {
+    height: 100%;
+  }
+  
+  .intro-step-container {
+    height: 100%;
+  }
+  
+  .hui-intro-screen {
+    display: flex;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    height: calc(100vh - 160px);
+  }
+  
+  .hui-intro-screen-content {
+    flex: 1;
+    padding-right: 40px;
+  }
+  
+  .hui-intro-screen-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #16191f;
+  }
+  
+  .hui-paragraph-large {
+    font-size: 16px;
+    line-height: 24px;
+    color: #16191f;
+  }
+  
+  .awsui_variant-primary {
+    background-color: #ec7211;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .hui-text-secondary {
+    color: #687078;
+    margin-top: 10px;
+  }
+  
+  .intro-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .hui-intro-screen {
+      flex-direction: column;
+      padding: 20px;
+      height: auto;
+    }
+    
+    .hui-intro-screen-content {
+      padding-right: 0;
+      padding-bottom: 30px;
+    }
+  }
+  

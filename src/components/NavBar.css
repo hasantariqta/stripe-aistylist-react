@@ -1,0 +1,59 @@
+.hui-navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+    background-color: #232f3e;
+    color: white;
+  }
+  
+  .hui-navbar-aws-logo {
+    height: 30px;
+    margin-right: 20px;
+  }
+  
+  .hui-navbar-separator {
+    height: 20px;
+    margin: 0 15px;
+    border: none;
+    border-left: 1px solid #5a5a5a;
+  }
+  
+  .hui-navbar-title {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .hui-navbar-right-content {
+    margin-left: auto;
+  }
+  
+  .awsui_button {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  
+  .awsui_variant-normal {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+  }
+  
+  .awsui_icon {
+    display: inline-flex;
+    margin-left: 5px;
+  }
+  
+  .awsui_icon svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+  }
+  

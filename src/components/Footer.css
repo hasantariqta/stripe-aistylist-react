@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eaeded;
+    font-size: 12px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-link {
+    color: #0073bb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .hui-help-text-01 {
+    color: #687078;
+  }
+  
