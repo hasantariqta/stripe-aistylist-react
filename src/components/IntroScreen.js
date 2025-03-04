@@ -1,5 +1,5 @@
 import React from 'react';
-import './components/IntroScreen.css';
+import './IntroScreen.css';
 
 function IntroScreen({ onStartDemo }) {
   return (
