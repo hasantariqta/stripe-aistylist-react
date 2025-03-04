@@ -11,6 +11,10 @@
     "@stripe/react-stripe-js": "^2.4.0",
     "@stripe/stripe-js": "^2.2.0"
   },
+  "resolutions": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
