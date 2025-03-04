@@ -6,12 +6,10 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
-      <div className="bedrock-demo">
-        <AppLayout />
-        <Footer />
-      </div>
-    </Router>
+  <div className="bedrock-demo">
+    <AppLayout />
+    <Footer />
+  </div>
   );
 }
 
